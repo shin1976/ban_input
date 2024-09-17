@@ -40,3 +40,32 @@
 .read-the-docs {
   color: #888;
 }
+.border-secondary {
+  border: solid 1px #696969;
+}
+
+.container {
+  /* background: #8fdaff; */
+  /* position: relative; */
+  /* top: -5vh; */
+  width: 60%;
+  margin: auto;
+  /* text-align: center; */
+}
+
+/* タブレット用のスタイル */
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+  .border-secondary {
+    border: solid 2px #696969;
+  }
+}
+
+/* スマホ用のスタイル */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
