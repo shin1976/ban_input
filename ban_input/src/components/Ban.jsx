@@ -1,7 +1,17 @@
-import React from 'react'
+// import React, { useState } from 'react'
+
+import { useContext } from "react";
+import { MyContext } from "../App";
+
 
 const Ban = () => {
+  const{state,setState} = useContext(MyContext);
+  // const [state,setState] = useState('')
     const dan = ["一", "二", "三", "四", "五", "六", "七", "八", "九", ""];
+    const getState=(event)=>{
+      const ban_id = event.target.id;
+      setState(ban_id.charAt(1)+dan[ban_id.charAt(2)-1]);
+    }
   return (
     <div className="container">
     <div id="ban">
@@ -41,7 +51,7 @@ const Ban = () => {
             }
 
             return (
-              <td key={id} id={id} className={className} style={style}>
+              <td key={id} id={id} className={className} style={style} onClick={getState}>
                 {content}
               </td>
             );
@@ -51,6 +61,7 @@ const Ban = () => {
       ))}
     </table>
   </div>
+  {/* <h3>{state}</h3> */}
   </div>
   )
 }
