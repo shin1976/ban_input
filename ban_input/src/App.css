@@ -96,11 +96,10 @@
 }
 .input_tag {
   display: flex;
+  justify-content: flex-end;
   font-size: 30px;
-  /* line-height: 30px; */
-  /* height: 30px; */
+  line-height: 30px;
   align-items: center;
-
 }
 .input_text {
   margin-right: 10px;
@@ -108,7 +107,8 @@
 
 .input_button {
   height: 30px; /* ボタンの高さを指定 */
-  padding: 5px 20px; ボタンの内側の余白を指定
+  /* padding: 5px 20px; ボタンの内側の余白を指定 */
+
   line-height: 30px;
 }
 
@@ -142,6 +142,21 @@
   #ban_koma {
     display: flex;
   }
+  .input_tag {
+    display: flex;
+    font-size: 15px;
+    /* line-height: 30px; */
+    /* height: 30px; */
+    align-items: center;
+  }
+  .input_text {
+    margin-right: 10px;
+  }
+
+  .input_button {
+    /* padding: 5px 20px; ボタンの内側の余白を指定 */
+    line-height: 15px;
+  }
 }
 
 /* スマホ用のスタイル */
@@ -172,20 +187,18 @@
     display: flex;
   }
   .input_tag {
-    display: float;
+    display: flex;
     font-size: 10px;
     /* line-height: 30px; */
     /* height: 30px; */
     align-items: center;
-  
   }
   .input_text {
     margin-right: 2px;
   }
-  
+
   .input_button {
-    height: 10px; /* ボタンの高さを指定 */
+    font-size: 10px;
     line-height: 10px;
   }
-  
 }
