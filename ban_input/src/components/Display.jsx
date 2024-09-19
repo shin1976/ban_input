@@ -5,7 +5,7 @@ const Display = () => {
   const{state,setState,koma,setKoma,hugo,setHugo,answer,setAnswer} = useContext(MyContext);
   const addAnswer = ()=>{
       let newAnswer = [...answer];
-      newAnswer = [newAnswer,state+koma+hugo];
+      newAnswer = [newAnswer,',',state+koma+hugo];
       setState('');
       setKoma('');
       setHugo('');
