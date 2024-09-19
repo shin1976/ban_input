@@ -11,14 +11,15 @@ function App() {
   const [state,setState] = useState('')
   const [koma,setKoma] = useState('')
   const [hugo,setHugo] = useState('')
-  const dan = ["一", "二", "三", "四", "五", "六", "七", "八", "九", ""];
+  const [answer,setAnswer] = useState(['2二金']);
+  // const dan = ["一", "二", "三", "四", "五", "六", "七", "八", "九", ""];
   // const getState=(event)=>{
   //   const ban_id = event.target.id;
   //   setState(ban_id.charAt(1)+dan[ban_id.charAt(2)-1]);
   // }
 
   return (
-    <MyContext.Provider value={ {state,setState,koma,setKoma,hugo,setHugo}}>
+    <MyContext.Provider value={ {state,setState,koma,setKoma,hugo,setHugo,answer,setAnswer}}>
     <Title/>
     <Bankoma/>
    
