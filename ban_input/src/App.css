@@ -112,6 +112,11 @@
   line-height: 30px;
 }
 
+#sendForm {
+  font-size: 30px;
+  font-weight: bold;
+}
+
 /* タブレット用のスタイル */
 @media (max-width: 1024px) {
   .container {
@@ -157,6 +162,10 @@
     /* padding: 5px 20px; ボタンの内側の余白を指定 */
     line-height: 15px;
   }
+  #sendForm {
+    font-size: 10px;
+    font-weight: bold;
+  }
 }
 
 /* スマホ用のスタイル */
@@ -200,5 +209,9 @@
   .input_button {
     font-size: 10px;
     line-height: 10px;
+  }
+  #sendForm {
+    font-size: 10px;
+    font-weight: bold;
   }
 }

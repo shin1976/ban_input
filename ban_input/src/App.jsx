@@ -11,7 +11,7 @@ function App() {
   const [state,setState] = useState('')
   const [koma,setKoma] = useState('')
   const [hugo,setHugo] = useState('')
-  const [answer,setAnswer] = useState(['2二金']);
+  const [answer,setAnswer] = useState([]);
   // const dan = ["一", "二", "三", "四", "五", "六", "七", "八", "九", ""];
   // const getState=(event)=>{
   //   const ban_id = event.target.id;
