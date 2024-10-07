@@ -1,6 +1,6 @@
 import React from 'react'
 import Ban from './Ban'
-import Koma from './Koma'
+// import Koma from './Koma'
 import Display from './Display'
 
 const Bankoma = () => {

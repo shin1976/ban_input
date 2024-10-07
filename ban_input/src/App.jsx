@@ -1,11 +1,13 @@
 import { createContext, useState } from 'react'
 export const MyContext = createContext();
+import './Reset.css'
 import './App.css'
-import Ban from './components/Ban'
+// import Ban from './components/Ban'
 import Title from './components/Title'
-import Display from './components/Display';
+// import Display from './components/Display';
 import Koma from './components/Koma';
 import Bankoma from './components/Bankoma';
+import RegistName from './components/RegistName';
 
 function App() {
   const [state,setState] = useState('')
@@ -25,6 +27,7 @@ function App() {
    
    
     <Koma/>
+    <RegistName/>
     </MyContext.Provider>
 
   )
